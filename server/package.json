@@ -10,12 +10,14 @@
   "dependencies": {
     "@teselagen/queue-middleware": "^7.0.0",
     "@teselagen/s3-uploads": "^8.4.0",
+    "aws-sdk": "^2.374.0",
     "bluebird": "^3.5.2",
     "body-parser": "^1.18.3",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "dotenv": "^6.1.0",
     "express": "^4.16.4",
+    "fs-extra": "^7.0.1",
     "graphql": "^14.0.2",
     "graphql-server-express": "^1.4.0",
     "graphql-tools": "^4.0.0",
@@ -27,6 +29,7 @@
     "nwb": "^0.23.0",
     "oradm-to-gql": "^15.1.0",
     "pg": "^7.5.0",
-    "pg-connection-string": "^2.0.0"
+    "pg-connection-string": "^2.0.0",
+    "s3rver": "^2.2.7"
   }
 }

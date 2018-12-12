@@ -7,7 +7,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const queueManager = require("@teselagen/queue-middleware");
-const { simpleDemo, j5Demo } = require("../demo");
+const { simpleDemo } = require("../demo");
 async function startUp() {
   var initApp = require("../app");
   var debug = console.log; //require('debug')('example-server:server');
