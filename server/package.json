@@ -8,6 +8,7 @@
     "initDb": "TG_INIT_DB=1 yarn start"
   },
   "dependencies": {
+    "@teselagen/queue-middleware": "^7.0.0",
     "@teselagen/s3-uploads": "^8.4.0",
     "bluebird": "^3.5.2",
     "body-parser": "^1.18.3",

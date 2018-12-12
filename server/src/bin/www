@@ -6,7 +6,7 @@
 const dotenv = require("dotenv");
 dotenv.config();
 
-const queueManager = require("../../../../src");
+const queueManager = require("@teselagen/queue-middleware");
 const { simpleDemo, j5Demo } = require("../demo");
 async function startUp() {
   var initApp = require("../app");

@@ -29,7 +29,7 @@ const {
 const config = require("./config");
 const extendTableMap = require("./extendTableMap");
 const Promise = require("bluebird");
-const queueManager = require("../../../src");
+const queueManager = require("@teselagen/queue-middleware");
 const {
   S3UploadProvider
 } = require("@teselagen/s3-uploads");
