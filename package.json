@@ -1,0 +1,12 @@
+{
+  "name": "queue-middleware-example",
+  "version": "1.0.0",
+  "description": "Example of how to configure and use the queue-middleware",
+  "main": "index.js",
+  "author": "TeselaGen",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "nwb": "^0.23.0"
+  }
+}

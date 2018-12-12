@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="40F63CA1-4F7C-4232-DF79-DF4C08ADB5D2">
+<createdBy>adamt</createdBy>
+<createdTime>2018-10-05 17:42:55 UTC</createdTime>
+<ownerDesignName>example-queue-server</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="0BAB9750-3572-D01D-FDD4-6E791E910F78" mainViewID="E6CF4FAC-5410-3C5F-B07F-D706E4693B3C">
+<createdBy>adamt</createdBy>
+<createdTime>2018-10-05 17:42:55 UTC</createdTime>
+<ownerDesignName>example-queue-server</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

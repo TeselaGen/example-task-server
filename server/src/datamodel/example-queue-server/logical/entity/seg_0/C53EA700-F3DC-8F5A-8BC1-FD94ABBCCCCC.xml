@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C53EA700-F3DC-8F5A-8BC1-FD94ABBCCCCC" name="User">
+<createdBy>adamt</createdBy>
+<createdTime>2018-10-05 17:45:44 UTC</createdTime>
+<ownerDesignName>example-queue-server</ownerDesignName>
+<engineerTo>
+<item key="8A967961-4E83-6F8B-ACFC-387DBA8023E3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="23015056-B68F-0B56-5B68-E93ED4F5D9FB">
+<createdBy>adamt</createdBy>
+<createdTime>2018-10-05 17:45:51 UTC</createdTime>
+<ownerDesignName>example-queue-server</ownerDesignName>
+<engineerTo>
+<item key="8A967961-4E83-6F8B-ACFC-387DBA8023E3" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>226ADBAC-7E5D-133A-D68E-D41F1758FB6C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="username" id="FE829446-1922-94B8-BFCB-9275CB32DC0C">
+<createdBy>adamt</createdBy>
+<createdTime>2018-10-05 17:45:56 UTC</createdTime>
+<ownerDesignName>example-queue-server</ownerDesignName>
+<engineerTo>
+<item key="8A967961-4E83-6F8B-ACFC-387DBA8023E3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>E22467A2-A793-E4C5-0C65-F663AC065B95</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="firstName" id="A35B65E9-4ED7-1634-3D42-B9EB2B41FF5B">
+<createdBy>adamt</createdBy>
+<createdTime>2018-10-05 17:46:04 UTC</createdTime>
+<ownerDesignName>example-queue-server</ownerDesignName>
+<engineerTo>
+<item key="8A967961-4E83-6F8B-ACFC-387DBA8023E3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>E22467A2-A793-E4C5-0C65-F663AC065B95</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lastName" id="5911ACF5-1D89-2DF4-3790-7E4A4C65D181">
+<createdBy>adamt</createdBy>
+<createdTime>2018-10-05 17:46:13 UTC</createdTime>
+<ownerDesignName>example-queue-server</ownerDesignName>
+<engineerTo>
+<item key="8A967961-4E83-6F8B-ACFC-387DBA8023E3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>E22467A2-A793-E4C5-0C65-F663AC065B95</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E3EFCED4-9951-99EA-7EF6-98213909F8C2" name="User PK">
+<createdBy>adamt</createdBy>
+<createdTime>2018-10-05 17:45:55 UTC</createdTime>
+<ownerDesignName>example-queue-server</ownerDesignName>
+<engineerTo>
+<item key="8A967961-4E83-6F8B-ACFC-387DBA8023E3" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>23015056-B68F-0B56-5B68-E93ED4F5D9FB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

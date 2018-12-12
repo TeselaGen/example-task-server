@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="example-queue-server" id="D98B4CEC-B070-D30A-9CA0-FA4E27149334" version="3.5">
+<createdBy>adamt</createdBy>
+<createdTime>2018-10-05 17:42:55 UTC</createdTime>
+<ownerDesignName>example-queue-server</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>D98B4CEC-B070-D30A-9CA0-FA4E27149334</designId>
+</OSDM_Design>

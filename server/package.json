@@ -1,0 +1,31 @@
+{
+  "name": "example-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./src/bin/www",
+    "ds": "refreshSchema=1 yarn start",
+    "initDb": "TG_INIT_DB=1 yarn start"
+  },
+  "dependencies": {
+    "@teselagen/s3-uploads": "^8.4.0",
+    "bluebird": "^3.5.2",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "graphql": "^14.0.2",
+    "graphql-server-express": "^1.4.0",
+    "graphql-tools": "^4.0.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "knex": "^0.15.2",
+    "lodash": "^4.17.11",
+    "morgan": "~1.9.0",
+    "nwb": "^0.23.0",
+    "oradm-to-gql": "^15.1.0",
+    "pg": "^7.5.0",
+    "pg-connection-string": "^2.0.0"
+  }
+}

@@ -1,0 +1,2414 @@
+{
+  "scalars": [
+    "JSON",
+    "Date",
+    "Number"
+  ],
+  "types": {
+    "typeUpdate": {
+      "code": {
+        "type": "String",
+        "required": true,
+        "isScalar": true,
+        "isKey": true
+      },
+      "lastUpdated": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "createdAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "updatedAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "cid": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastFetched": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "comment": "Server generated property that indicates the last time this attribute was fetched"
+      }
+    },
+    "typeUpdateCursorResult": {
+      "results": {
+        "type": "typeUpdate",
+        "isList": true
+      },
+      "filter": {
+        "type": "JSON"
+      },
+      "sort": {
+        "type": "[String]"
+      },
+      "pageNumber": {
+        "type": "Int"
+      },
+      "pageSize": {
+        "type": "Int"
+      },
+      "totalResults": {
+        "type": "Int"
+      },
+      "lastFetched": {
+        "type": "Date"
+      },
+      "typeUpdates": {
+        "type": "typeUpdate",
+        "isList": true
+      }
+    },
+    "createTypeUpdatePayload": {
+      "createdItemsCursor": {
+        "type": "typeUpdateCursorResult"
+      }
+    },
+    "updateTypeUpdatePayload": {
+      "updatedItemsCursor": {
+        "type": "typeUpdateCursorResult"
+      }
+    },
+    "updateTypeUpdatesWithQueryPayload": {
+      "updatedItemsCursor": {
+        "type": "typeUpdateCursorResult"
+      }
+    },
+    "deleteTypeUpdatePayload": {
+      "deletedCount": {
+        "type": "Int",
+        "isScalar": true
+      },
+      "typeUpdates": {
+        "type": "typeUpdate",
+        "isList": true
+      }
+    },
+    "deleteTypeUpdatesWithQueryPayload": {
+      "deletedCount": {
+        "type": "Int",
+        "isScalar": true
+      },
+      "typeUpdates": {
+        "type": "typeUpdate",
+        "isList": true
+      }
+    },
+    "microserviceQueue": {
+      "authToken": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "checkInInterval": {
+        "type": "Number",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "controlToken": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "id": {
+        "type": "String",
+        "required": true,
+        "isScalar": true,
+        "isKey": true
+      },
+      "input": {
+        "type": "JSON",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastCheckIn": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "missedCheckInCount": {
+        "type": "Number",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "result": {
+        "type": "JSON",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "resultStatus": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "service": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "serviceUrl": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "startedOn": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "status": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "taskId": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "trackingId": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "createdAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "updatedAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "cid": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastFetched": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "comment": "Server generated property that indicates the last time this attribute was fetched"
+      },
+      "microserviceIoFiles": {
+        "type": "microserviceIoFile",
+        "required": false,
+        "isList": true,
+        "args": {
+          "filter": {
+            "type": "JSON"
+          },
+          "sort": {
+            "type": "[String]"
+          },
+          "pageNumber": {
+            "type": "Int"
+          },
+          "pageSize": {
+            "type": "Int"
+          }
+        }
+      },
+      "microserviceIoFilesCursor": {
+        "type": "microserviceIoFileCursorResult",
+        "required": false,
+        "isCursor": true,
+        "comment": "Returns a paginated cursor result of microserviceIoFiles instead of an Array",
+        "args": {
+          "filter": {
+            "type": "JSON"
+          },
+          "sort": {
+            "type": "[String]"
+          },
+          "pageNumber": {
+            "type": "Int"
+          },
+          "pageSize": {
+            "type": "Int"
+          }
+        }
+      },
+      "microserviceQueueLogEntries": {
+        "type": "microserviceQueueLogEntry",
+        "required": false,
+        "isList": true,
+        "args": {
+          "filter": {
+            "type": "JSON"
+          },
+          "sort": {
+            "type": "[String]"
+          },
+          "pageNumber": {
+            "type": "Int"
+          },
+          "pageSize": {
+            "type": "Int"
+          }
+        }
+      },
+      "microserviceQueueLogEntriesCursor": {
+        "type": "microserviceQueueLogEntryCursorResult",
+        "required": false,
+        "isCursor": true,
+        "comment": "Returns a paginated cursor result of microserviceQueueLogEntries instead of an Array",
+        "args": {
+          "filter": {
+            "type": "JSON"
+          },
+          "sort": {
+            "type": "[String]"
+          },
+          "pageNumber": {
+            "type": "Int"
+          },
+          "pageSize": {
+            "type": "Int"
+          }
+        }
+      }
+    },
+    "microserviceQueueCursorResult": {
+      "results": {
+        "type": "microserviceQueue",
+        "isList": true
+      },
+      "filter": {
+        "type": "JSON"
+      },
+      "sort": {
+        "type": "[String]"
+      },
+      "pageNumber": {
+        "type": "Int"
+      },
+      "pageSize": {
+        "type": "Int"
+      },
+      "totalResults": {
+        "type": "Int"
+      },
+      "lastFetched": {
+        "type": "Date"
+      },
+      "typeUpdates": {
+        "type": "typeUpdate",
+        "isList": true
+      }
+    },
+    "createMicroserviceQueuePayload": {
+      "createdItemsCursor": {
+        "type": "microserviceQueueCursorResult"
+      }
+    },
+    "updateMicroserviceQueuePayload": {
+      "updatedItemsCursor": {
+        "type": "microserviceQueueCursorResult"
+      }
+    },
+    "updateMicroserviceQueuesWithQueryPayload": {
+      "updatedItemsCursor": {
+        "type": "microserviceQueueCursorResult"
+      }
+    },
+    "deleteMicroserviceQueuePayload": {
+      "deletedCount": {
+        "type": "Int",
+        "isScalar": true
+      },
+      "typeUpdates": {
+        "type": "typeUpdate",
+        "isList": true
+      }
+    },
+    "deleteMicroserviceQueuesWithQueryPayload": {
+      "deletedCount": {
+        "type": "Int",
+        "isScalar": true
+      },
+      "typeUpdates": {
+        "type": "typeUpdate",
+        "isList": true
+      }
+    },
+    "microserviceQueueLogEntry": {
+      "channel": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "details": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "id": {
+        "type": "String",
+        "required": true,
+        "isScalar": true,
+        "isKey": true
+      },
+      "level": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "message": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "metadata": {
+        "type": "JSON",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "microserviceQueueId": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "comment": "Reference key for microserviceQueue",
+        "isKey": false
+      },
+      "microserviceQueue": {
+        "type": "microserviceQueue",
+        "required": false
+      },
+      "createdAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "updatedAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "cid": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastFetched": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "comment": "Server generated property that indicates the last time this attribute was fetched"
+      }
+    },
+    "microserviceQueueLogEntryCursorResult": {
+      "results": {
+        "type": "microserviceQueueLogEntry",
+        "isList": true
+      },
+      "filter": {
+        "type": "JSON"
+      },
+      "sort": {
+        "type": "[String]"
+      },
+      "pageNumber": {
+        "type": "Int"
+      },
+      "pageSize": {
+        "type": "Int"
+      },
+      "totalResults": {
+        "type": "Int"
+      },
+      "lastFetched": {
+        "type": "Date"
+      },
+      "typeUpdates": {
+        "type": "typeUpdate",
+        "isList": true
+      }
+    },
+    "createMicroserviceQueueLogEntryPayload": {
+      "createdItemsCursor": {
+        "type": "microserviceQueueLogEntryCursorResult"
+      }
+    },
+    "updateMicroserviceQueueLogEntryPayload": {
+      "updatedItemsCursor": {
+        "type": "microserviceQueueLogEntryCursorResult"
+      }
+    },
+    "updateMicroserviceQueueLogEntriesWithQueryPayload": {
+      "updatedItemsCursor": {
+        "type": "microserviceQueueLogEntryCursorResult"
+      }
+    },
+    "deleteMicroserviceQueueLogEntryPayload": {
+      "deletedCount": {
+        "type": "Int",
+        "isScalar": true
+      },
+      "typeUpdates": {
+        "type": "typeUpdate",
+        "isList": true
+      }
+    },
+    "deleteMicroserviceQueueLogEntriesWithQueryPayload": {
+      "deletedCount": {
+        "type": "Int",
+        "isScalar": true
+      },
+      "typeUpdates": {
+        "type": "typeUpdate",
+        "isList": true
+      }
+    },
+    "microserviceIoFile": {
+      "fileUrl": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "id": {
+        "type": "String",
+        "required": true,
+        "isScalar": true,
+        "isKey": true
+      },
+      "microserviceQueueId": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "comment": "Reference key for microserviceQueue",
+        "isKey": false
+      },
+      "microserviceQueue": {
+        "type": "microserviceQueue",
+        "required": false
+      },
+      "type": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "comment": "Determines whether this is an input or output file",
+        "isKey": false
+      },
+      "destinationPath": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "createdAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "updatedAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "cid": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastFetched": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "comment": "Server generated property that indicates the last time this attribute was fetched"
+      }
+    },
+    "microserviceIoFileCursorResult": {
+      "results": {
+        "type": "microserviceIoFile",
+        "isList": true
+      },
+      "filter": {
+        "type": "JSON"
+      },
+      "sort": {
+        "type": "[String]"
+      },
+      "pageNumber": {
+        "type": "Int"
+      },
+      "pageSize": {
+        "type": "Int"
+      },
+      "totalResults": {
+        "type": "Int"
+      },
+      "lastFetched": {
+        "type": "Date"
+      },
+      "typeUpdates": {
+        "type": "typeUpdate",
+        "isList": true
+      }
+    },
+    "createMicroserviceIoFilePayload": {
+      "createdItemsCursor": {
+        "type": "microserviceIoFileCursorResult"
+      }
+    },
+    "updateMicroserviceIoFilePayload": {
+      "updatedItemsCursor": {
+        "type": "microserviceIoFileCursorResult"
+      }
+    },
+    "updateMicroserviceIoFilesWithQueryPayload": {
+      "updatedItemsCursor": {
+        "type": "microserviceIoFileCursorResult"
+      }
+    },
+    "deleteMicroserviceIoFilePayload": {
+      "deletedCount": {
+        "type": "Int",
+        "isScalar": true
+      },
+      "typeUpdates": {
+        "type": "typeUpdate",
+        "isList": true
+      }
+    },
+    "deleteMicroserviceIoFilesWithQueryPayload": {
+      "deletedCount": {
+        "type": "Int",
+        "isScalar": true
+      },
+      "typeUpdates": {
+        "type": "typeUpdate",
+        "isList": true
+      }
+    },
+    "user": {
+      "id": {
+        "type": "String",
+        "required": true,
+        "isScalar": true,
+        "isKey": true
+      },
+      "username": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "firstName": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastName": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "createdAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "updatedAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "cid": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastFetched": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "comment": "Server generated property that indicates the last time this attribute was fetched"
+      }
+    },
+    "userCursorResult": {
+      "results": {
+        "type": "user",
+        "isList": true
+      },
+      "filter": {
+        "type": "JSON"
+      },
+      "sort": {
+        "type": "[String]"
+      },
+      "pageNumber": {
+        "type": "Int"
+      },
+      "pageSize": {
+        "type": "Int"
+      },
+      "totalResults": {
+        "type": "Int"
+      },
+      "lastFetched": {
+        "type": "Date"
+      },
+      "typeUpdates": {
+        "type": "typeUpdate",
+        "isList": true
+      }
+    },
+    "createUserPayload": {
+      "createdItemsCursor": {
+        "type": "userCursorResult"
+      }
+    },
+    "updateUserPayload": {
+      "updatedItemsCursor": {
+        "type": "userCursorResult"
+      }
+    },
+    "updateUsersWithQueryPayload": {
+      "updatedItemsCursor": {
+        "type": "userCursorResult"
+      }
+    },
+    "deleteUserPayload": {
+      "deletedCount": {
+        "type": "Int",
+        "isScalar": true
+      },
+      "typeUpdates": {
+        "type": "typeUpdate",
+        "isList": true
+      }
+    },
+    "deleteUsersWithQueryPayload": {
+      "deletedCount": {
+        "type": "Int",
+        "isScalar": true
+      },
+      "typeUpdates": {
+        "type": "typeUpdate",
+        "isList": true
+      }
+    }
+  },
+  "inputs": {
+    "createTypeUpdateInput": {
+      "code": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": true
+      },
+      "lastUpdated": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "createdAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "updatedAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "cid": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastFetched": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "comment": "Server generated property that indicates the last time this attribute was fetched"
+      }
+    },
+    "bulkCreatetypeUpdatesInput": {
+      "createItems": {
+        "type": "createTypeUpdateInput",
+        "isList": true
+      }
+    },
+    "updateTypeUpdateInput": {
+      "code": {
+        "type": "String",
+        "required": true,
+        "isScalar": true,
+        "isKey": true
+      },
+      "lastUpdated": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "createdAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "updatedAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "cid": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastFetched": {
+        "type": "Date",
+        "isScalar": true,
+        "comment": "Server generated property that indicates the last time this attribute was fetched"
+      }
+    },
+    "updateTypeUpdateValuesInput": {
+      "lastUpdated": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "createdAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "updatedAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "cid": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastFetched": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "comment": "Server generated property that indicates the last time this attribute was fetched"
+      }
+    },
+    "updateTypeUpdateQueryInput": {
+      "values": {
+        "type": "updateTypeUpdateValuesInput",
+        "isList": false
+      },
+      "where": {
+        "type": "JSON",
+        "isScalar": true,
+        "required": true
+      }
+    },
+    "updateTypeUpdatesWithQueryInput": {
+      "updateQueries": {
+        "type": "updateTypeUpdateQueryInput",
+        "isList": true
+      }
+    },
+    "deleteTypeUpdateInput": {
+      "code": {
+        "type": "String",
+        "required": true,
+        "isScalar": true,
+        "isKey": true
+      }
+    },
+    "deleteTypeUpdatesWithQueryInput": {
+      "deleteQueries": {
+        "type": "JSON",
+        "isScalar": true,
+        "isList": true
+      }
+    },
+    "createMicroserviceQueueInput": {
+      "authToken": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "checkInInterval": {
+        "type": "Number",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "controlToken": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "id": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": true
+      },
+      "input": {
+        "type": "JSON",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastCheckIn": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "missedCheckInCount": {
+        "type": "Number",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "result": {
+        "type": "JSON",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "resultStatus": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "service": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "serviceUrl": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "startedOn": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "status": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "taskId": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "trackingId": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "createdAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "updatedAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "cid": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastFetched": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "comment": "Server generated property that indicates the last time this attribute was fetched"
+      },
+      "microserviceIoFiles": {
+        "type": "createMicroserviceIoFileInput",
+        "required": false,
+        "isList": true,
+        "args": {
+          "filter": {
+            "type": "JSON"
+          },
+          "sort": {
+            "type": "[String]"
+          },
+          "pageNumber": {
+            "type": "Int"
+          },
+          "pageSize": {
+            "type": "Int"
+          }
+        }
+      },
+      "microserviceQueueLogEntries": {
+        "type": "createMicroserviceQueueLogEntryInput",
+        "required": false,
+        "isList": true,
+        "args": {
+          "filter": {
+            "type": "JSON"
+          },
+          "sort": {
+            "type": "[String]"
+          },
+          "pageNumber": {
+            "type": "Int"
+          },
+          "pageSize": {
+            "type": "Int"
+          }
+        }
+      }
+    },
+    "bulkCreatemicroserviceQueuesInput": {
+      "createItems": {
+        "type": "createMicroserviceQueueInput",
+        "isList": true
+      }
+    },
+    "updateMicroserviceQueueInput": {
+      "authToken": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "checkInInterval": {
+        "type": "Number",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "controlToken": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "id": {
+        "type": "String",
+        "required": true,
+        "isScalar": true,
+        "isKey": true
+      },
+      "input": {
+        "type": "JSON",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastCheckIn": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "missedCheckInCount": {
+        "type": "Number",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "result": {
+        "type": "JSON",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "resultStatus": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "service": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "serviceUrl": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "startedOn": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "status": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "taskId": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "trackingId": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "createdAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "updatedAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "cid": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastFetched": {
+        "type": "Date",
+        "isScalar": true,
+        "comment": "Server generated property that indicates the last time this attribute was fetched"
+      },
+      "microserviceIoFiles": {
+        "type": "updateMicroserviceIoFileInput",
+        "isList": true,
+        "args": {
+          "filter": {
+            "type": "JSON"
+          },
+          "sort": {
+            "type": "[String]"
+          },
+          "pageNumber": {
+            "type": "Int"
+          },
+          "pageSize": {
+            "type": "Int"
+          }
+        }
+      },
+      "microserviceQueueLogEntries": {
+        "type": "updateMicroserviceQueueLogEntryInput",
+        "isList": true,
+        "args": {
+          "filter": {
+            "type": "JSON"
+          },
+          "sort": {
+            "type": "[String]"
+          },
+          "pageNumber": {
+            "type": "Int"
+          },
+          "pageSize": {
+            "type": "Int"
+          }
+        }
+      }
+    },
+    "updateMicroserviceQueueValuesInput": {
+      "authToken": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "checkInInterval": {
+        "type": "Number",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "controlToken": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "input": {
+        "type": "JSON",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastCheckIn": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "missedCheckInCount": {
+        "type": "Number",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "result": {
+        "type": "JSON",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "resultStatus": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "service": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "serviceUrl": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "startedOn": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "status": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "taskId": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "trackingId": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "createdAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "updatedAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "cid": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastFetched": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "comment": "Server generated property that indicates the last time this attribute was fetched"
+      }
+    },
+    "updateMicroserviceQueueQueryInput": {
+      "values": {
+        "type": "updateMicroserviceQueueValuesInput",
+        "isList": false
+      },
+      "where": {
+        "type": "JSON",
+        "isScalar": true,
+        "required": true
+      }
+    },
+    "updateMicroserviceQueuesWithQueryInput": {
+      "updateQueries": {
+        "type": "updateMicroserviceQueueQueryInput",
+        "isList": true
+      }
+    },
+    "deleteMicroserviceQueueInput": {
+      "id": {
+        "type": "String",
+        "required": true,
+        "isScalar": true,
+        "isKey": true
+      },
+      "microserviceIoFiles": {
+        "type": "deleteMicroserviceIoFileInput",
+        "required": false,
+        "isList": true,
+        "args": {
+          "filter": {
+            "type": "JSON"
+          },
+          "sort": {
+            "type": "[String]"
+          },
+          "pageNumber": {
+            "type": "Int"
+          },
+          "pageSize": {
+            "type": "Int"
+          }
+        }
+      },
+      "microserviceQueueLogEntries": {
+        "type": "deleteMicroserviceQueueLogEntryInput",
+        "required": false,
+        "isList": true,
+        "args": {
+          "filter": {
+            "type": "JSON"
+          },
+          "sort": {
+            "type": "[String]"
+          },
+          "pageNumber": {
+            "type": "Int"
+          },
+          "pageSize": {
+            "type": "Int"
+          }
+        }
+      }
+    },
+    "deleteMicroserviceQueuesWithQueryInput": {
+      "deleteQueries": {
+        "type": "JSON",
+        "isScalar": true,
+        "isList": true
+      }
+    },
+    "createMicroserviceQueueLogEntryInput": {
+      "channel": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "details": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "id": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": true
+      },
+      "level": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "message": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "metadata": {
+        "type": "JSON",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "microserviceQueueId": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "comment": "Reference key for microserviceQueue",
+        "isKey": false
+      },
+      "microserviceQueue": {
+        "type": "createMicroserviceQueueInput",
+        "required": false
+      },
+      "createdAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "updatedAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "cid": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastFetched": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "comment": "Server generated property that indicates the last time this attribute was fetched"
+      }
+    },
+    "bulkCreatemicroserviceQueueLogEntriesInput": {
+      "createItems": {
+        "type": "createMicroserviceQueueLogEntryInput",
+        "isList": true
+      }
+    },
+    "updateMicroserviceQueueLogEntryInput": {
+      "channel": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "details": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "id": {
+        "type": "String",
+        "required": true,
+        "isScalar": true,
+        "isKey": true
+      },
+      "level": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "message": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "metadata": {
+        "type": "JSON",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "microserviceQueueId": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "comment": "Reference key for microserviceQueue",
+        "isKey": false
+      },
+      "microserviceQueue": {
+        "type": "updateMicroserviceQueueInput"
+      },
+      "createdAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "updatedAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "cid": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastFetched": {
+        "type": "Date",
+        "isScalar": true,
+        "comment": "Server generated property that indicates the last time this attribute was fetched"
+      }
+    },
+    "updateMicroserviceQueueLogEntryValuesInput": {
+      "channel": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "details": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "level": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "message": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "metadata": {
+        "type": "JSON",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "microserviceQueueId": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "comment": "Reference key for microserviceQueue",
+        "isKey": false
+      },
+      "createdAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "updatedAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "cid": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastFetched": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "comment": "Server generated property that indicates the last time this attribute was fetched"
+      }
+    },
+    "updateMicroserviceQueueLogEntryQueryInput": {
+      "values": {
+        "type": "updateMicroserviceQueueLogEntryValuesInput",
+        "isList": false
+      },
+      "where": {
+        "type": "JSON",
+        "isScalar": true,
+        "required": true
+      }
+    },
+    "updateMicroserviceQueueLogEntriesWithQueryInput": {
+      "updateQueries": {
+        "type": "updateMicroserviceQueueLogEntryQueryInput",
+        "isList": true
+      }
+    },
+    "deleteMicroserviceQueueLogEntryInput": {
+      "id": {
+        "type": "String",
+        "required": true,
+        "isScalar": true,
+        "isKey": true
+      },
+      "microserviceQueue": {
+        "type": "deleteMicroserviceQueueInput",
+        "required": false
+      }
+    },
+    "deleteMicroserviceQueueLogEntriesWithQueryInput": {
+      "deleteQueries": {
+        "type": "JSON",
+        "isScalar": true,
+        "isList": true
+      }
+    },
+    "createMicroserviceIoFileInput": {
+      "fileUrl": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "id": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": true
+      },
+      "microserviceQueueId": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "comment": "Reference key for microserviceQueue",
+        "isKey": false
+      },
+      "microserviceQueue": {
+        "type": "createMicroserviceQueueInput",
+        "required": false
+      },
+      "type": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "comment": "Determines whether this is an input or output file",
+        "isKey": false
+      },
+      "destinationPath": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "createdAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "updatedAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "cid": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastFetched": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "comment": "Server generated property that indicates the last time this attribute was fetched"
+      }
+    },
+    "bulkCreatemicroserviceIoFilesInput": {
+      "createItems": {
+        "type": "createMicroserviceIoFileInput",
+        "isList": true
+      }
+    },
+    "updateMicroserviceIoFileInput": {
+      "fileUrl": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "id": {
+        "type": "String",
+        "required": true,
+        "isScalar": true,
+        "isKey": true
+      },
+      "microserviceQueueId": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "comment": "Reference key for microserviceQueue",
+        "isKey": false
+      },
+      "microserviceQueue": {
+        "type": "updateMicroserviceQueueInput"
+      },
+      "type": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "comment": "Determines whether this is an input or output file",
+        "isKey": false
+      },
+      "destinationPath": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "createdAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "updatedAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "cid": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastFetched": {
+        "type": "Date",
+        "isScalar": true,
+        "comment": "Server generated property that indicates the last time this attribute was fetched"
+      }
+    },
+    "updateMicroserviceIoFileValuesInput": {
+      "fileUrl": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "microserviceQueueId": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "comment": "Reference key for microserviceQueue",
+        "isKey": false
+      },
+      "type": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "comment": "Determines whether this is an input or output file",
+        "isKey": false
+      },
+      "destinationPath": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "createdAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "updatedAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "cid": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastFetched": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "comment": "Server generated property that indicates the last time this attribute was fetched"
+      }
+    },
+    "updateMicroserviceIoFileQueryInput": {
+      "values": {
+        "type": "updateMicroserviceIoFileValuesInput",
+        "isList": false
+      },
+      "where": {
+        "type": "JSON",
+        "isScalar": true,
+        "required": true
+      }
+    },
+    "updateMicroserviceIoFilesWithQueryInput": {
+      "updateQueries": {
+        "type": "updateMicroserviceIoFileQueryInput",
+        "isList": true
+      }
+    },
+    "deleteMicroserviceIoFileInput": {
+      "id": {
+        "type": "String",
+        "required": true,
+        "isScalar": true,
+        "isKey": true
+      },
+      "microserviceQueue": {
+        "type": "deleteMicroserviceQueueInput",
+        "required": false
+      }
+    },
+    "deleteMicroserviceIoFilesWithQueryInput": {
+      "deleteQueries": {
+        "type": "JSON",
+        "isScalar": true,
+        "isList": true
+      }
+    },
+    "createUserInput": {
+      "id": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": true
+      },
+      "username": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "firstName": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastName": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "createdAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "updatedAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "cid": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastFetched": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "comment": "Server generated property that indicates the last time this attribute was fetched"
+      }
+    },
+    "bulkCreateusersInput": {
+      "createItems": {
+        "type": "createUserInput",
+        "isList": true
+      }
+    },
+    "updateUserInput": {
+      "id": {
+        "type": "String",
+        "required": true,
+        "isScalar": true,
+        "isKey": true
+      },
+      "username": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "firstName": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastName": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "createdAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "updatedAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "cid": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastFetched": {
+        "type": "Date",
+        "isScalar": true,
+        "comment": "Server generated property that indicates the last time this attribute was fetched"
+      }
+    },
+    "updateUserValuesInput": {
+      "username": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "firstName": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastName": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "createdAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "updatedAt": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "cid": {
+        "type": "String",
+        "required": false,
+        "isScalar": true,
+        "isKey": false
+      },
+      "lastFetched": {
+        "type": "Date",
+        "required": false,
+        "isScalar": true,
+        "comment": "Server generated property that indicates the last time this attribute was fetched"
+      }
+    },
+    "updateUserQueryInput": {
+      "values": {
+        "type": "updateUserValuesInput",
+        "isList": false
+      },
+      "where": {
+        "type": "JSON",
+        "isScalar": true,
+        "required": true
+      }
+    },
+    "updateUsersWithQueryInput": {
+      "updateQueries": {
+        "type": "updateUserQueryInput",
+        "isList": true
+      }
+    },
+    "deleteUserInput": {
+      "id": {
+        "type": "String",
+        "required": true,
+        "isScalar": true,
+        "isKey": true
+      }
+    },
+    "deleteUsersWithQueryInput": {
+      "deleteQueries": {
+        "type": "JSON",
+        "isScalar": true,
+        "isList": true
+      }
+    }
+  },
+  "queries": {
+    "typeUpdate": {
+      "type": "typeUpdate",
+      "isList": false,
+      "args": {
+        "code": {
+          "type": "String",
+          "required": true,
+          "isScalar": true
+        }
+      }
+    },
+    "typeUpdates": {
+      "type": "typeUpdateCursorResult",
+      "isList": false,
+      "args": {
+        "filter": {
+          "type": "JSON"
+        },
+        "sort": {
+          "type": "[String]"
+        },
+        "pageNumber": {
+          "type": "Int"
+        },
+        "pageSize": {
+          "type": "Int"
+        }
+      }
+    },
+    "microserviceQueue": {
+      "type": "microserviceQueue",
+      "isList": false,
+      "args": {
+        "id": {
+          "type": "String",
+          "required": true,
+          "isScalar": true
+        }
+      }
+    },
+    "microserviceQueues": {
+      "type": "microserviceQueueCursorResult",
+      "isList": false,
+      "args": {
+        "filter": {
+          "type": "JSON"
+        },
+        "sort": {
+          "type": "[String]"
+        },
+        "pageNumber": {
+          "type": "Int"
+        },
+        "pageSize": {
+          "type": "Int"
+        }
+      }
+    },
+    "microserviceQueueLogEntry": {
+      "type": "microserviceQueueLogEntry",
+      "isList": false,
+      "args": {
+        "id": {
+          "type": "String",
+          "required": true,
+          "isScalar": true
+        }
+      }
+    },
+    "microserviceQueueLogEntries": {
+      "type": "microserviceQueueLogEntryCursorResult",
+      "isList": false,
+      "args": {
+        "filter": {
+          "type": "JSON"
+        },
+        "sort": {
+          "type": "[String]"
+        },
+        "pageNumber": {
+          "type": "Int"
+        },
+        "pageSize": {
+          "type": "Int"
+        }
+      }
+    },
+    "microserviceIoFile": {
+      "type": "microserviceIoFile",
+      "isList": false,
+      "args": {
+        "id": {
+          "type": "String",
+          "required": true,
+          "isScalar": true
+        }
+      }
+    },
+    "microserviceIoFiles": {
+      "type": "microserviceIoFileCursorResult",
+      "isList": false,
+      "args": {
+        "filter": {
+          "type": "JSON"
+        },
+        "sort": {
+          "type": "[String]"
+        },
+        "pageNumber": {
+          "type": "Int"
+        },
+        "pageSize": {
+          "type": "Int"
+        }
+      }
+    },
+    "user": {
+      "type": "user",
+      "isList": false,
+      "args": {
+        "id": {
+          "type": "String",
+          "required": true,
+          "isScalar": true
+        }
+      }
+    },
+    "users": {
+      "type": "userCursorResult",
+      "isList": false,
+      "args": {
+        "filter": {
+          "type": "JSON"
+        },
+        "sort": {
+          "type": "[String]"
+        },
+        "pageNumber": {
+          "type": "Int"
+        },
+        "pageSize": {
+          "type": "Int"
+        }
+      }
+    }
+  },
+  "mutations": {
+    "createTypeUpdate": {
+      "type": "createTypeUpdatePayload",
+      "args": {
+        "input": {
+          "type": "createTypeUpdateInput",
+          "isList": true,
+          "required": true
+        }
+      }
+    },
+    "updateTypeUpdate": {
+      "type": "updateTypeUpdatePayload",
+      "args": {
+        "input": {
+          "type": "updateTypeUpdateInput",
+          "isList": true,
+          "required": true
+        }
+      }
+    },
+    "updateTypeUpdatesWithQuery": {
+      "type": "updateTypeUpdatesWithQueryPayload",
+      "args": {
+        "input": {
+          "type": "updateTypeUpdatesWithQueryInput",
+          "required": true
+        }
+      }
+    },
+    "deleteTypeUpdate": {
+      "type": "deleteTypeUpdatePayload",
+      "args": {
+        "input": {
+          "type": "deleteTypeUpdateInput",
+          "isList": true,
+          "required": true
+        }
+      }
+    },
+    "deleteTypeUpdatesWithQuery": {
+      "type": "deleteTypeUpdatesWithQueryPayload",
+      "args": {
+        "input": {
+          "type": "deleteTypeUpdatesWithQueryInput",
+          "required": true
+        }
+      }
+    },
+    "createMicroserviceQueue": {
+      "type": "createMicroserviceQueuePayload",
+      "args": {
+        "input": {
+          "type": "createMicroserviceQueueInput",
+          "isList": true,
+          "required": true
+        }
+      }
+    },
+    "updateMicroserviceQueue": {
+      "type": "updateMicroserviceQueuePayload",
+      "args": {
+        "input": {
+          "type": "updateMicroserviceQueueInput",
+          "isList": true,
+          "required": true
+        }
+      }
+    },
+    "updateMicroserviceQueuesWithQuery": {
+      "type": "updateMicroserviceQueuesWithQueryPayload",
+      "args": {
+        "input": {
+          "type": "updateMicroserviceQueuesWithQueryInput",
+          "required": true
+        }
+      }
+    },
+    "deleteMicroserviceQueue": {
+      "type": "deleteMicroserviceQueuePayload",
+      "args": {
+        "input": {
+          "type": "deleteMicroserviceQueueInput",
+          "isList": true,
+          "required": true
+        }
+      }
+    },
+    "deleteMicroserviceQueuesWithQuery": {
+      "type": "deleteMicroserviceQueuesWithQueryPayload",
+      "args": {
+        "input": {
+          "type": "deleteMicroserviceQueuesWithQueryInput",
+          "required": true
+        }
+      }
+    },
+    "createMicroserviceQueueLogEntry": {
+      "type": "createMicroserviceQueueLogEntryPayload",
+      "args": {
+        "input": {
+          "type": "createMicroserviceQueueLogEntryInput",
+          "isList": true,
+          "required": true
+        }
+      }
+    },
+    "updateMicroserviceQueueLogEntry": {
+      "type": "updateMicroserviceQueueLogEntryPayload",
+      "args": {
+        "input": {
+          "type": "updateMicroserviceQueueLogEntryInput",
+          "isList": true,
+          "required": true
+        }
+      }
+    },
+    "updateMicroserviceQueueLogEntriesWithQuery": {
+      "type": "updateMicroserviceQueueLogEntriesWithQueryPayload",
+      "args": {
+        "input": {
+          "type": "updateMicroserviceQueueLogEntriesWithQueryInput",
+          "required": true
+        }
+      }
+    },
+    "deleteMicroserviceQueueLogEntry": {
+      "type": "deleteMicroserviceQueueLogEntryPayload",
+      "args": {
+        "input": {
+          "type": "deleteMicroserviceQueueLogEntryInput",
+          "isList": true,
+          "required": true
+        }
+      }
+    },
+    "deleteMicroserviceQueueLogEntriesWithQuery": {
+      "type": "deleteMicroserviceQueueLogEntriesWithQueryPayload",
+      "args": {
+        "input": {
+          "type": "deleteMicroserviceQueueLogEntriesWithQueryInput",
+          "required": true
+        }
+      }
+    },
+    "createMicroserviceIoFile": {
+      "type": "createMicroserviceIoFilePayload",
+      "args": {
+        "input": {
+          "type": "createMicroserviceIoFileInput",
+          "isList": true,
+          "required": true
+        }
+      }
+    },
+    "updateMicroserviceIoFile": {
+      "type": "updateMicroserviceIoFilePayload",
+      "args": {
+        "input": {
+          "type": "updateMicroserviceIoFileInput",
+          "isList": true,
+          "required": true
+        }
+      }
+    },
+    "updateMicroserviceIoFilesWithQuery": {
+      "type": "updateMicroserviceIoFilesWithQueryPayload",
+      "args": {
+        "input": {
+          "type": "updateMicroserviceIoFilesWithQueryInput",
+          "required": true
+        }
+      }
+    },
+    "deleteMicroserviceIoFile": {
+      "type": "deleteMicroserviceIoFilePayload",
+      "args": {
+        "input": {
+          "type": "deleteMicroserviceIoFileInput",
+          "isList": true,
+          "required": true
+        }
+      }
+    },
+    "deleteMicroserviceIoFilesWithQuery": {
+      "type": "deleteMicroserviceIoFilesWithQueryPayload",
+      "args": {
+        "input": {
+          "type": "deleteMicroserviceIoFilesWithQueryInput",
+          "required": true
+        }
+      }
+    },
+    "createUser": {
+      "type": "createUserPayload",
+      "args": {
+        "input": {
+          "type": "createUserInput",
+          "isList": true,
+          "required": true
+        }
+      }
+    },
+    "updateUser": {
+      "type": "updateUserPayload",
+      "args": {
+        "input": {
+          "type": "updateUserInput",
+          "isList": true,
+          "required": true
+        }
+      }
+    },
+    "updateUsersWithQuery": {
+      "type": "updateUsersWithQueryPayload",
+      "args": {
+        "input": {
+          "type": "updateUsersWithQueryInput",
+          "required": true
+        }
+      }
+    },
+    "deleteUser": {
+      "type": "deleteUserPayload",
+      "args": {
+        "input": {
+          "type": "deleteUserInput",
+          "isList": true,
+          "required": true
+        }
+      }
+    },
+    "deleteUsersWithQuery": {
+      "type": "deleteUsersWithQueryPayload",
+      "args": {
+        "input": {
+          "type": "deleteUsersWithQueryInput",
+          "required": true
+        }
+      }
+    }
+  }
+}

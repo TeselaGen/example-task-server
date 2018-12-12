@@ -1,0 +1,589 @@
+{
+  "tables": [
+    {
+      "schema": "app",
+      "tableName": "typeUpdate",
+      "columns": [
+        {
+          "type": "string",
+          "typeArgs": [
+            "code",
+            400
+          ],
+          "name": "code",
+          "primaryKey": true,
+          "increments": false
+        },
+        {
+          "type": "timestamp",
+          "typeArgs": [
+            "lastUpdated"
+          ],
+          "name": "lastUpdated",
+          "primaryKey": false
+        },
+        {
+          "type": "timestamp",
+          "typeArgs": [
+            "createdAt"
+          ],
+          "name": "createdAt",
+          "primaryKey": false,
+          "unique": false
+        },
+        {
+          "type": "timestamp",
+          "typeArgs": [
+            "updatedAt"
+          ],
+          "name": "updatedAt",
+          "primaryKey": false,
+          "unique": false
+        },
+        {
+          "type": "string",
+          "typeArgs": [
+            "cid",
+            500
+          ],
+          "name": "cid",
+          "primaryKey": false,
+          "unique": true
+        }
+      ]
+    },
+    {
+      "schema": "app",
+      "tableName": "microserviceQueue",
+      "columns": [
+        {
+          "type": "string",
+          "typeArgs": [
+            "authToken",
+            400
+          ],
+          "name": "authToken",
+          "primaryKey": false
+        },
+        {
+          "type": "specificType",
+          "typeArgs": [
+            "checkInInterval",
+            "NUMERIC"
+          ],
+          "name": "checkInInterval",
+          "primaryKey": false
+        },
+        {
+          "type": "string",
+          "typeArgs": [
+            "controlToken",
+            400
+          ],
+          "name": "controlToken",
+          "primaryKey": false
+        },
+        {
+          "type": "specificType",
+          "typeArgs": [
+            "id",
+            "NUMERIC"
+          ],
+          "name": "id",
+          "primaryKey": true,
+          "increments": true
+        },
+        {
+          "type": "json",
+          "typeArgs": [
+            "input"
+          ],
+          "name": "input",
+          "primaryKey": false
+        },
+        {
+          "type": "timestamp",
+          "typeArgs": [
+            "lastCheckIn"
+          ],
+          "name": "lastCheckIn",
+          "primaryKey": false
+        },
+        {
+          "type": "specificType",
+          "typeArgs": [
+            "missedCheckInCount",
+            "NUMERIC"
+          ],
+          "name": "missedCheckInCount",
+          "primaryKey": false
+        },
+        {
+          "type": "json",
+          "typeArgs": [
+            "result"
+          ],
+          "name": "result",
+          "primaryKey": false
+        },
+        {
+          "type": "string",
+          "typeArgs": [
+            "resultStatus",
+            400
+          ],
+          "name": "resultStatus",
+          "primaryKey": false
+        },
+        {
+          "type": "string",
+          "typeArgs": [
+            "service",
+            400
+          ],
+          "name": "service",
+          "primaryKey": false
+        },
+        {
+          "type": "string",
+          "typeArgs": [
+            "serviceUrl",
+            400
+          ],
+          "name": "serviceUrl",
+          "primaryKey": false
+        },
+        {
+          "type": "timestamp",
+          "typeArgs": [
+            "startedOn"
+          ],
+          "name": "startedOn",
+          "primaryKey": false
+        },
+        {
+          "type": "string",
+          "typeArgs": [
+            "status",
+            400
+          ],
+          "name": "status",
+          "primaryKey": false
+        },
+        {
+          "type": "string",
+          "typeArgs": [
+            "taskId",
+            400
+          ],
+          "name": "taskId",
+          "primaryKey": false
+        },
+        {
+          "type": "string",
+          "typeArgs": [
+            "trackingId",
+            400
+          ],
+          "name": "trackingId",
+          "primaryKey": false
+        },
+        {
+          "type": "timestamp",
+          "typeArgs": [
+            "createdAt"
+          ],
+          "name": "createdAt",
+          "primaryKey": false,
+          "unique": false
+        },
+        {
+          "type": "timestamp",
+          "typeArgs": [
+            "updatedAt"
+          ],
+          "name": "updatedAt",
+          "primaryKey": false,
+          "unique": false
+        },
+        {
+          "type": "string",
+          "typeArgs": [
+            "cid",
+            500
+          ],
+          "name": "cid",
+          "primaryKey": false,
+          "unique": true
+        }
+      ]
+    },
+    {
+      "schema": "app",
+      "tableName": "microserviceQueueLogEntry",
+      "columns": [
+        {
+          "type": "string",
+          "typeArgs": [
+            "channel",
+            400
+          ],
+          "name": "channel",
+          "primaryKey": false
+        },
+        {
+          "type": "text",
+          "typeArgs": [
+            "details"
+          ],
+          "name": "details",
+          "primaryKey": false
+        },
+        {
+          "type": "specificType",
+          "typeArgs": [
+            "id",
+            "NUMERIC"
+          ],
+          "name": "id",
+          "primaryKey": true,
+          "increments": true
+        },
+        {
+          "type": "string",
+          "typeArgs": [
+            "level",
+            400
+          ],
+          "name": "level",
+          "primaryKey": false
+        },
+        {
+          "type": "string",
+          "typeArgs": [
+            "message",
+            400
+          ],
+          "name": "message",
+          "primaryKey": false
+        },
+        {
+          "type": "json",
+          "typeArgs": [
+            "metadata"
+          ],
+          "name": "metadata",
+          "primaryKey": false
+        },
+        {
+          "type": "integer",
+          "typeArgs": [
+            "microserviceQueueId"
+          ],
+          "name": "microserviceQueueId",
+          "primaryKey": false
+        },
+        {
+          "type": "timestamp",
+          "typeArgs": [
+            "createdAt"
+          ],
+          "name": "createdAt",
+          "primaryKey": false,
+          "unique": false
+        },
+        {
+          "type": "timestamp",
+          "typeArgs": [
+            "updatedAt"
+          ],
+          "name": "updatedAt",
+          "primaryKey": false,
+          "unique": false
+        },
+        {
+          "type": "string",
+          "typeArgs": [
+            "cid",
+            500
+          ],
+          "name": "cid",
+          "primaryKey": false,
+          "unique": true
+        }
+      ]
+    },
+    {
+      "schema": "app",
+      "tableName": "microserviceIoFile",
+      "columns": [
+        {
+          "type": "string",
+          "typeArgs": [
+            "fileUrl",
+            4000
+          ],
+          "name": "fileUrl",
+          "primaryKey": false
+        },
+        {
+          "type": "specificType",
+          "typeArgs": [
+            "id",
+            "NUMERIC"
+          ],
+          "name": "id",
+          "primaryKey": true,
+          "increments": true
+        },
+        {
+          "type": "integer",
+          "typeArgs": [
+            "microserviceQueueId"
+          ],
+          "name": "microserviceQueueId",
+          "primaryKey": false
+        },
+        {
+          "type": "string",
+          "typeArgs": [
+            "type",
+            400
+          ],
+          "name": "type",
+          "primaryKey": false
+        },
+        {
+          "type": "string",
+          "typeArgs": [
+            "destinationPath",
+            4000
+          ],
+          "name": "destinationPath",
+          "primaryKey": false
+        },
+        {
+          "type": "timestamp",
+          "typeArgs": [
+            "createdAt"
+          ],
+          "name": "createdAt",
+          "primaryKey": false,
+          "unique": false
+        },
+        {
+          "type": "timestamp",
+          "typeArgs": [
+            "updatedAt"
+          ],
+          "name": "updatedAt",
+          "primaryKey": false,
+          "unique": false
+        },
+        {
+          "type": "string",
+          "typeArgs": [
+            "cid",
+            500
+          ],
+          "name": "cid",
+          "primaryKey": false,
+          "unique": true
+        }
+      ]
+    },
+    {
+      "schema": "app",
+      "tableName": "user",
+      "columns": [
+        {
+          "type": "specificType",
+          "typeArgs": [
+            "id",
+            "NUMERIC"
+          ],
+          "name": "id",
+          "primaryKey": true,
+          "increments": true
+        },
+        {
+          "type": "string",
+          "typeArgs": [
+            "username",
+            400
+          ],
+          "name": "username",
+          "primaryKey": false
+        },
+        {
+          "type": "string",
+          "typeArgs": [
+            "firstName",
+            400
+          ],
+          "name": "firstName",
+          "primaryKey": false
+        },
+        {
+          "type": "string",
+          "typeArgs": [
+            "lastName",
+            400
+          ],
+          "name": "lastName",
+          "primaryKey": false
+        },
+        {
+          "type": "timestamp",
+          "typeArgs": [
+            "createdAt"
+          ],
+          "name": "createdAt",
+          "primaryKey": false,
+          "unique": false
+        },
+        {
+          "type": "timestamp",
+          "typeArgs": [
+            "updatedAt"
+          ],
+          "name": "updatedAt",
+          "primaryKey": false,
+          "unique": false
+        },
+        {
+          "type": "string",
+          "typeArgs": [
+            "cid",
+            500
+          ],
+          "name": "cid",
+          "primaryKey": false,
+          "unique": true
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "tableName": "microserviceQueueLogEntry",
+      "columnName": "microserviceQueueId",
+      "referenceTableName": "microserviceQueue",
+      "referenceColumnName": "id",
+      "fkName": "mcrsrvcQLgEn_mcrsrvcQ_fk",
+      "onUpdate": "",
+      "onDelete": "CASCADE",
+      "schema": "app"
+    },
+    {
+      "tableName": "microserviceIoFile",
+      "columnName": "microserviceQueueId",
+      "referenceTableName": "microserviceQueue",
+      "referenceColumnName": "id",
+      "fkName": "mcrsrvcIFl_mcrsrvcQ_fk",
+      "onUpdate": "",
+      "onDelete": "CASCADE",
+      "schema": "app"
+    }
+  ],
+  "constraints": [
+    {
+      "type": "integer",
+      "typeArgs": [
+        "microserviceQueueId"
+      ],
+      "name": "microserviceQueueId",
+      "primaryKey": false,
+      "schema": "app",
+      "tableName": "microserviceQueueLogEntry",
+      "constraintType": "NOT_NULL"
+    },
+    {
+      "type": "integer",
+      "typeArgs": [
+        "microserviceQueueId"
+      ],
+      "name": "microserviceQueueId",
+      "primaryKey": false,
+      "schema": "app",
+      "tableName": "microserviceIoFile",
+      "constraintType": "NOT_NULL"
+    }
+  ],
+  "cleanSchema": [
+    {
+      "cmd": "DROP SCHEMA IF EXISTS ?? CASCADE",
+      "bindings": [
+        "app"
+      ]
+    },
+    {
+      "cmd": "CREATE SCHEMA ?? ",
+      "bindings": [
+        "app"
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "cmd": "\nCREATE FUNCTION \"app\".\"tcf_microserviceQueue\"()\n    RETURNS trigger\n    LANGUAGE 'plpgsql'\n    NOT LEAKPROOF \nAS $BODY$\nBEGIN\n    UPDATE \"typeUpdate\" \n    SET \"lastUpdated\" = current_timestamp\n    WHERE \"code\" = 'microserviceQueue';\n    RETURN NEW;\nEND;\n$BODY$",
+      "bindings": []
+    },
+    {
+      "cmd": "\nCREATE FUNCTION \"app\".\"tcf_microserviceQueueLogEntry\"()\n    RETURNS trigger\n    LANGUAGE 'plpgsql'\n    NOT LEAKPROOF \nAS $BODY$\nBEGIN\n    UPDATE \"typeUpdate\" \n    SET \"lastUpdated\" = current_timestamp\n    WHERE \"code\" = 'microserviceQueueLogEntry';\n    RETURN NEW;\nEND;\n$BODY$",
+      "bindings": []
+    },
+    {
+      "cmd": "\nCREATE FUNCTION \"app\".\"tcf_microserviceIoFile\"()\n    RETURNS trigger\n    LANGUAGE 'plpgsql'\n    NOT LEAKPROOF \nAS $BODY$\nBEGIN\n    UPDATE \"typeUpdate\" \n    SET \"lastUpdated\" = current_timestamp\n    WHERE \"code\" = 'microserviceIoFile';\n    RETURN NEW;\nEND;\n$BODY$",
+      "bindings": []
+    },
+    {
+      "cmd": "\nCREATE FUNCTION \"app\".\"tcf_user\"()\n    RETURNS trigger\n    LANGUAGE 'plpgsql'\n    NOT LEAKPROOF \nAS $BODY$\nBEGIN\n    UPDATE \"typeUpdate\" \n    SET \"lastUpdated\" = current_timestamp\n    WHERE \"code\" = 'user';\n    RETURN NEW;\nEND;\n$BODY$",
+      "bindings": []
+    }
+  ],
+  "triggers": [
+    {
+      "cmd": "\nCREATE TRIGGER \"tcu_microserviceQueue\"\nAFTER INSERT OR DELETE OR UPDATE \nON \"app\".\"microserviceQueue\"\nFOR EACH STATEMENT\nEXECUTE PROCEDURE \"app\".\"tcf_microserviceQueue\"()\n                ",
+      "bindings": []
+    },
+    {
+      "cmd": "\nCREATE TRIGGER \"tcu_microserviceQueueLogEntry\"\nAFTER INSERT OR DELETE OR UPDATE \nON \"app\".\"microserviceQueueLogEntry\"\nFOR EACH STATEMENT\nEXECUTE PROCEDURE \"app\".\"tcf_microserviceQueueLogEntry\"()\n                ",
+      "bindings": []
+    },
+    {
+      "cmd": "\nCREATE TRIGGER \"tcu_microserviceIoFile\"\nAFTER INSERT OR DELETE OR UPDATE \nON \"app\".\"microserviceIoFile\"\nFOR EACH STATEMENT\nEXECUTE PROCEDURE \"app\".\"tcf_microserviceIoFile\"()\n                ",
+      "bindings": []
+    },
+    {
+      "cmd": "\nCREATE TRIGGER \"tcu_user\"\nAFTER INSERT OR DELETE OR UPDATE \nON \"app\".\"user\"\nFOR EACH STATEMENT\nEXECUTE PROCEDURE \"app\".\"tcf_user\"()\n                ",
+      "bindings": []
+    }
+  ],
+  "initSql": [
+    {
+      "cmd": "INSERT INTO \"app\".\"typeUpdate\" (\"code\", \"lastUpdated\") VALUES (?, current_timestamp)",
+      "bindings": [
+        "microserviceQueue"
+      ]
+    },
+    {
+      "cmd": "INSERT INTO \"app\".\"typeUpdate\" (\"code\", \"lastUpdated\") VALUES (?, current_timestamp)",
+      "bindings": [
+        "microserviceQueueLogEntry"
+      ]
+    },
+    {
+      "cmd": "INSERT INTO \"app\".\"typeUpdate\" (\"code\", \"lastUpdated\") VALUES (?, current_timestamp)",
+      "bindings": [
+        "microserviceIoFile"
+      ]
+    },
+    {
+      "cmd": "INSERT INTO \"app\".\"typeUpdate\" (\"code\", \"lastUpdated\") VALUES (?, current_timestamp)",
+      "bindings": [
+        "user"
+      ]
+    }
+  ]
+}
